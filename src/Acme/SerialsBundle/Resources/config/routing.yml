@@ -1,0 +1,7 @@
+acme_serials_homepage:
+    pattern:  /
+    defaults: { _controller: AcmeSerialsBundle:Default:index }
+
+acme_serials_create:
+    pattern:  /create
+    defaults: { _controller: AcmeSerialsBundle:Default:create }
