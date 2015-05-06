@@ -21,15 +21,15 @@ class Serial
      */
     private $id;
 
-//    /**
-//     * @ORM\OneToMany(targetEntity="Product", mappedBy="category")
-//     */
-//    protected $products;
-//
-//    public function __construct()
-//    {
-//        $this->products = new ArrayCollection();
-//    }
+    /**
+     * @ORM\OneToMany(targetEntity="Seasons", mappedBy="category")
+     */
+    protected $products;
+
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+    }
 
     /**
      * @var string
