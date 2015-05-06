@@ -4,6 +4,7 @@ namespace Acme\SerialsBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Acme\SerialsBundle\Entity\Serial;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
@@ -22,7 +23,7 @@ class DefaultController extends Controller
         $serial->setStudio('Disney');
         $serial->setProducer('Walt Disney');
         $serial->setActors('Little dog and other');
-        $serial->setDateStart(new \DateTime("2011-06-02 18:54:12"));
+        $serial->setDateStart(new \DateTime("2015-06-02 18:54:12"));
         $serial->setDescription('This is serial about little dog');
 
         $em = $this->getDoctrine()->getManager();
